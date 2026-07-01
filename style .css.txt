@@ -1,0 +1,187 @@
+/* รีเซ็ตค่าเริ่มต้นของเบราว์เซอร์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0f12; /* สีพื้นหลังโทนเข้มสุดเท่ */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ส่วนหัวเว็บไซต์ (Header) */
+header {
+    background: linear-gradient(rgba(13, 15, 18, 0.85), rgba(13, 15, 18, 0.95)), url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 3px solid #009c3b; /* ขอบล่างสีเขียวบราซิล */
+}
+
+.brazil-flag-icons {
+    font-weight: bold;
+    color: #2ecc71;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    color: #f1c40f; /* สีเหลืองทอง */
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #009c3b;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+header p.sub-text {
+    font-size: 1.05rem;
+    color: #bdc3c7;
+    font-weight: normal;
+    max-width: 600px;
+    margin: 0 auto;
+    letter-spacing: 0;
+}
+
+/* คอนเทนเนอร์เนื้อหาหลัก */
+.main-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ส่วนอธิบายประวัติ (Intro Section) */
+.intro-section {
+    text-align: center;
+    margin-bottom: 45px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.intro-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.intro-section .fullname {
+    font-size: 1rem;
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.intro-section .desc {
+    color: #a6b4c9;
+    font-size: 1rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* จัดเลย์เอาต์การ์ดรูปภาพ (Grid) */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* ตัวการ์ดไอเทม */
+.item-card {
+    background-color: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(241, 196, 15, 0.1);
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ชี้หรือกดบนมือถือ */
+.item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(241, 196, 15, 0.15);
+    border: 1px solid rgba(241, 196, 15, 0.4);
+}
+
+/* ป้าย Badge มุมบนการ์ด */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff5722;
+    color: white;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.item-card:nth-child(2) .badge {
+    background-color: #009c3b; /* เปลี่ยนสีกรอบที่สองเป็นสีเขียว */
+}
+
+/* รูปภาพในการ์ด */
+.item-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.item-card:hover img {
+    transform: scale(1.03); /* ซูมรูปเล็กน้อยเวลาโฟกัส */
+}
+
+/* ข้อมูลในการ์ด */
+.item-info {
+    padding: 20px;
+    border-top: 3px solid #f1c40f; /* เส้นตัดสีทองเหนือข้อความ */
+}
+
+.item-info h3 {
+    font-size: 1.35rem;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.item-info p {
+    color: #8b9bb4;
+    font-size: 0.95rem;
+}
+
+/* ส่วนท้ายหน้าเว็บ (Footer) */
+footer {
+    background-color: #090b0e;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 0.85rem;
+    color: #57606a;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar Jr. - The Samba Magician Fansite</title>
+    <!-- ลิงก์เชื่อมโยงไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ส่วนหัวของเว็บไซต์ (Header) -->
+    <header>
+        <div class="header-container">
+            <div class="brazil-flag-icons">🇧🇷 NEYMAR JR 🇧🇷</div>
+            <h1>NEYMAR JR FANSITE</h1>
+            <p>CELEBRATING BRAZIL'S GOAL SCORING PHENOMENON</p>
+            <p class="sub-text">ร่วมเฉลิมฉลองให้กับพ่อมดลูกหนังแซมบ้า เจ้าของสไตล์การเล่นที่ตื่นตาตื่นใจที่สุดในโลก</p>
+        </div>
+    </header>
+
+    <!-- เนื้อหาหลัก (Main Content) -->
+    <main class="main-container">
+        
+        <!-- ประวัติและแนวคิดสั้น ๆ (About Section) -->
+        <section class="intro-section">
+            <h2>The Samba Magician</h2>
+            <p class="fullname">Neymar Da Silva Santos Júnior</p>
+            <p class="desc">เนย์มาร์ ดา ซิลวา ซานโตส จูเนียร์ หนึ่งในนักฟุตบอลที่เปี่ยมไปด้วยพรสวรรค์ รอยยิ้ม และเทคนิคการเล่นฟุตบอลสไตล์สตรีทแซมบ้าอันเป็นเอกลักษณ์ ที่สร้างแรงบันดาลใจให้กับแฟนบอลทั่วโลก</p>
+        </section>
+
+        <!-- แกลเลอรีรูปภาพและข้อมูลไฮไลท์ (Items Grid) -->
+        <section class="items-grid">
+            
+            <!-- การ์ดใบที่ 1: สไตล์การเล่น (รูปในสนาม) -->
+            <div class="item-card">
+                <div class="badge">🏆 NT</div>
+                <img src="https://images.unsplash.com/photo-1624887007721-390a36987771?w=600" alt="Neymar Juggling">
+                <div class="item-info">
+                    <h3>Joga Bonito Style</h3>
+                    <p>การเลี้ยงบอลที่พริ้วไหว ทักษะการสับขา และลูกเล่นที่คาดเดาไม่ได้ ทำให้เขากลายเป็นไอคอนแห่งความสนุกสนานบนฟลอร์หญ้า</p>
+                </div>
+            </div>
+
+            <!-- การ์ดใบที่ 2: ความสำเร็จในทีมชาติ (รูปทีมชาติบราซิล) -->
+            <div class="item-card">
+                <div class="badge">🇧🇷 NT</div>
+                <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=600" alt="Brazil National Team">
+                <div class="item-info">
+                    <h3>Brazil's Golden Boy</h3>
+                    <p>ผู้นำทัพและดาวยิงสูงสุดตลอดกาลของทีมชาติบราซิล ผู้แบกรับความหวังและความฝันของแฟนบอลชาวแซมบ้าในทุกทัวร์นาเมนต์</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ส่วนท้ายของเว็บ (Footer) -->
+    <footer>
+        <p>Created by Muhammadanas Mameeyoh | <a href="https://github.com" target="_blank">My GitHub</a></p>
+    </footer>
+
+</body>
+</html>
